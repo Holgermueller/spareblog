@@ -15,7 +15,7 @@
       </v-container>
     </v-main>
 
-    <v-footer app>
+    <v-footer absolute app>
       <span
         >&copy; {{ new Date().getFullYear() }} Holger Mueller &middot; Built
         with Nuxtjs</span

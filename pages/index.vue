@@ -6,50 +6,55 @@
           <p>
             {{ blogs[0].title }}
           </p>
+
           <v-spacer></v-spacer>
           <p>
             {{ formatDate(blogs[0].date) }}
           </p>
         </v-card-title>
+
+        <v-subtitle>
+          <p>Location</p>
+
+          <p>Listening to</p>
+        </v-subtitle>
+
         <v-card-text>
           <hr class="my-3" />
-
           <article>
-            <nuxt-content :document="blogs[0]"></nuxt-content>
+            <nuxt-content :document="blogs[0]" />
           </article>
         </v-card-text>
-        <v-card-actions> </v-card-actions>
       </v-card>
     </section>
 
     <section id="otherRecentPosts" class="other-recent-posts">
-      <h2>other recent posts appear here</h2>
       <v-container>
         <v-row>
-          <v-col>
+          <v-col v-for="(blog, index) in blogs.slice(1, 4)" :key="index">
             <v-hover v-slot:default="{ hover }">
               <v-card :elevation="hover ? 12 : 0" class="recent-post">
-                <v-card-title> title </v-card-title>
-                <hr />
-                <v-card-text> text </v-card-text>
-              </v-card>
-            </v-hover>
-          </v-col>
-          <v-col>
-            <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 12 : 0" class="recent-post">
-                <v-card-title> title </v-card-title>
-                <hr />
-                <v-card-text> text </v-card-text>
-              </v-card>
-            </v-hover>
-          </v-col>
-          <v-col>
-            <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 12 : 0" class="recent-post">
-                <v-card-title> title </v-card-title>
-                <hr />
-                <v-card-text> text </v-card-text>
+                <v-card-title>
+                  <h6>
+                    {{ blog.title }}
+                  </h6>
+                  <v-spacer></v-spacer>
+                  <h6>
+                    {{ formatDate(blog.date) }}
+                  </h6>
+                </v-card-title>
+                <v-divider class="divider"></v-divider>
+                <v-card-text>
+                  <article>
+                    <nuxt-content :document="blog" />
+                  </article>
+                </v-card-text>
+                <v-card-actions>
+                  <v-spacer></v-spacer>
+                  <v-chip outlined>
+                    Keep reading <v-icon right>mdi-arrow-right</v-icon>
+                  </v-chip>
+                </v-card-actions>
               </v-card>
             </v-hover>
           </v-col>
@@ -81,12 +86,12 @@ export default {
 </script>
 
 <style scoped>
-.newest-blog {
-  width: 95%;
+.newest-blog,
+.other-recent-posts {
+  width: 85%;
   margin: auto;
 }
-
-.other-recent-posts {
+.divider {
   width: 95%;
   margin: auto;
 }
