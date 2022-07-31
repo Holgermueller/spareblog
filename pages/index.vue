@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  name: 'Index',
 
   name: 'DefaultLayout',
   async asyncData({ $content }) {
@@ -81,6 +81,11 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     },
+
+    // determineTimeToRead(data) {
+    //   const WordsPerMinute = 200
+    //   let result: any = {}
+    // },
   },
 }
 </script>
