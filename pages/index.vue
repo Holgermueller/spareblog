@@ -9,7 +9,7 @@
 
           <v-spacer></v-spacer>
           <p>
-            {{ formatDate(blogs[0].date) }}
+            {{ blogs[0].date | formatDate }}
           </p>
         </v-card-title>
 
@@ -29,44 +29,20 @@
     </section>
 
     <section id="otherRecentPosts" class="other-recent-posts">
-      <v-container>
-        <v-row>
-          <v-col v-for="(blog, index) in blogs.slice(1, 4)" :key="index">
-            <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 12 : 0" class="recent-post">
-                <v-card-title>
-                  <h6>
-                    {{ blog.title }}
-                  </h6>
-                  <v-spacer></v-spacer>
-                  <h6>
-                    {{ formatDate(blog.date) }}
-                  </h6>
-                </v-card-title>
-                <v-divider class="divider"></v-divider>
-                <v-card-text>
-                  <article>
-                    <nuxt-content :document="blog" />
-                  </article>
-                </v-card-text>
-                <v-card-actions>
-                  <v-spacer></v-spacer>
-                  <v-chip outlined>
-                    Keep reading <v-icon right>mdi-arrow-right</v-icon>
-                  </v-chip>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-          </v-col>
-        </v-row>
-      </v-container>
+      <PreviousDisplay :blogs="blogs" />
     </section>
   </div>
 </template>
 
 <script>
+import PreviousDisplay from '../components/Previous'
+
 export default {
   name: 'Index',
+
+  components: {
+    PreviousDisplay,
+  },
 
   name: 'DefaultLayout',
   async asyncData({ $content }) {
@@ -77,15 +53,17 @@ export default {
   },
 
   methods: {
+    determineTimeToRead(data) {
+      const WordsPerMinute = 200
+      let result = {}
+    },
+  },
+
+  filters: {
     formatDate(date) {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     },
-
-    // determineTimeToRead(data) {
-    //   const WordsPerMinute = 200
-    //   let result: any = {}
-    // },
   },
 }
 </script>
