@@ -7,6 +7,11 @@
 <script>
 export default {
   name: 'About',
+  head() {
+    return {
+      title: 'About',
+    }
+  },
 }
 </script>
 

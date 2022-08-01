@@ -13,14 +13,14 @@
           </p>
         </v-card-title>
 
-        <v-subtitle>
+        <v-card-subtitle>
           <p>Location</p>
 
           <p>Listening to</p>
-        </v-subtitle>
+          <hr class="my-3" />
+        </v-card-subtitle>
 
         <v-card-text>
-          <hr class="my-3" />
           <article>
             <nuxt-content :document="blogs[0]" />
           </article>
