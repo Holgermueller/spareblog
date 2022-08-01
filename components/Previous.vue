@@ -22,7 +22,9 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">
+                <nuxt-link
+                  :to="{ name: '/blog/', params: { blog: blog.slug } }"
+                >
                   <v-chip outlined>
                     Keep reading <v-icon right>mdi-arrow-right</v-icon>
                   </v-chip>
@@ -39,6 +41,7 @@
 <script>
 export default {
   name: 'PreviousDisplay',
+
   props: {
     blogs: {
       type: Array,

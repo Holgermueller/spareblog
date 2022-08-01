@@ -8,6 +8,7 @@
 
 <script>
 export default {
+  head() {},
   async asyncData({ $content, params }) {
     const blog = await $content('blog', params.slug).fetch()
     return { blog }
