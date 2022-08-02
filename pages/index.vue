@@ -48,7 +48,7 @@ export default {
   name: 'DefaultLayout',
   async asyncData({ $content, params }) {
     const blogs = await $content('blogs', params.slug)
-      .sortBy('date', 'desc')
+      .sortBy('createdAt', 'desc')
       .fetch()
     return {
       blogs,

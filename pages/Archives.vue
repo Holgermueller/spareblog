@@ -9,11 +9,12 @@
             </h5>
             <v-spacer></v-spacer>
             <h5>
-              {{ blog.date | formatDate }}
+              {{ blog.createdAt | formatDate }}
             </h5>
           </v-card-title>
           <v-card-text>
             {{ blog.slug }}
+            {{ blog.path }}
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
@@ -42,7 +43,7 @@ export default {
 
   async asyncData({ $content, params }) {
     const blogs = await $content('blogs', params.slug)
-      .sortBy('date', 'desc')
+      .sortBy('createdAt', 'desc')
       .fetch()
     return {
       blogs,
