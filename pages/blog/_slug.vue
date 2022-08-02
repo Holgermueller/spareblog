@@ -1,7 +1,5 @@
 <template>
   <div class="post">
-    {{ blog }}
-
     <nuxt-content :document="blog"></nuxt-content>
   </div>
 </template>
@@ -10,7 +8,7 @@
 export default {
   head() {},
   async asyncData({ $content, params }) {
-    const blog = await $content('blog', params.slug).fetch()
+    const blog = await $content('blogs', params.slug).fetch()
     return { blog }
   },
 }

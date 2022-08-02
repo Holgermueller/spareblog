@@ -23,7 +23,7 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <nuxt-link
-                  :to="{ name: '/blog/', params: { blog: blog.slug } }"
+                  :to="{ name: 'blog-slug', params: { slug: blog.slug } }"
                 >
                   <v-chip outlined>
                     Keep reading <v-icon right>mdi-arrow-right</v-icon>
