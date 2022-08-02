@@ -10,12 +10,6 @@
       <v-card-text>
         <nuxt-content :document="blog"></nuxt-content>
       </v-card-text>
-
-      <v-card-actions>
-        <v-chip outlined to="/">
-          <v-icon left>mdi-arrow-left</v-icon> Back
-        </v-chip>
-      </v-card-actions>
     </v-card>
   </div>
 </template>

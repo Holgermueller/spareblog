@@ -10,6 +10,7 @@
           <v-spacer></v-spacer>
           <v-btn elevation="0" class="no-active" to="/about">About</v-btn>
           <v-btn elevation="0" class="no-active" to="/contact">Contact</v-btn>
+          <v-btn elevation="0" class="no-active" to="/archives">Archives</v-btn>
         </v-app-bar>
         <Nuxt />
       </v-container>
