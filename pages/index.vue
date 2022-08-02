@@ -3,14 +3,15 @@
     <section id="newestPost">
       <v-card class="newest-blog" elevation="0">
         <v-card-title class="headline">
-          <p>
+          <h1>
             {{ blogs[0].title }}
-          </p>
+          </h1>
 
           <v-spacer></v-spacer>
-          <p>
+
+          <h1>
             {{ blogs[0].date | formatDate }}
-          </p>
+          </h1>
         </v-card-title>
 
         <v-card-subtitle>
