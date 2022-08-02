@@ -1,6 +1,6 @@
 <template>
   <div id="contactForm" class="form-container">
-    <v-card class="form-card" elevation="0">
+    <v-card class="form-card" elevation="0" tile>
       <v-card-title>
         <h3>Or drop me a message. I'll respong faster this way!</h3>
       </v-card-title>

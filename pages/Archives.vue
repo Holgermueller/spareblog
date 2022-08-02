@@ -12,12 +12,8 @@
               {{ blog.createdAt | formatDate }}
             </h5>
           </v-card-title>
-          <v-card-text>
-            {{ blog.slug }}
-            {{ blog.path }}
-          </v-card-text>
+          <v-card-text> description here </v-card-text>
           <v-card-actions>
-            <v-spacer></v-spacer>
             <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
               <v-chip outlined>
                 Keep reading

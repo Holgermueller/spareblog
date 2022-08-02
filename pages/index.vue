@@ -15,15 +15,16 @@
         </v-card-title>
 
         <v-card-subtitle>
-          <p>Location</p>
+          <br />
+          <h4>Location</h4>
 
-          <p>Listening to</p>
+          <h4>Listening to</h4>
           <hr class="my-3" />
         </v-card-subtitle>
 
         <v-card-text>
           <article>
-            <nuxt-content :document="blogs[0]" />
+            <nuxt-content class="main-content" :document="blogs[0]" />
           </article>
         </v-card-text>
       </v-card>
@@ -80,5 +81,8 @@ export default {
 .divider {
   width: 95%;
   margin: auto;
+}
+.main-content {
+  font-size: 16px;
 }
 </style>

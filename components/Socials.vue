@@ -1,8 +1,8 @@
 <template>
   <div id="socials">
-    <v-card class="connections-display" elevation="0">
+    <v-card class="connections-display" elevation="0" tile>
       <v-card-title>
-        <h3>Connect or DM me on my socials</h3>
+        <h3>Connect on my socials</h3>
       </v-card-title>
       <v-card-text>
         <v-container>
