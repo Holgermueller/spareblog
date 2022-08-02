@@ -1,7 +1,7 @@
 ---
 title: Test 2
 date: 2022-07-22
-slug: test2
+slug: testblog2
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at suscipit felis. Sed quis tempor nisi. Integer molestie odio efficitur vestibulum ultricies. Morbi pharetra quam orci, vitae ornare tortor rutrum sed. Integer finibus laoreet pulvinar. Nulla porta auctor tempor. Aliquam erat volutpat. Nullam rutrum iaculis orci nec congue.
