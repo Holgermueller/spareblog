@@ -10,7 +10,7 @@
           <v-spacer></v-spacer>
 
           <h1>
-            {{ blogs[0].date | formatDate }}
+            {{ blogs[0].createdAt | formatDate }}
           </h1>
         </v-card-title>
 

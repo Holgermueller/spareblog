@@ -11,7 +11,7 @@
                 </h6>
                 <v-spacer></v-spacer>
                 <h6>
-                  {{ blog.date | formatDate }}
+                  {{ blog.createdAt | formatDate }}
                 </h6>
               </v-card-title>
               <v-divider class="divider"></v-divider>

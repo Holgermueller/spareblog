@@ -1,5 +1,7 @@
 ---
 title: Spiders
+locations: Batesville, Arkansas
+listeningTo:
 slug: spiders
 ---
 
