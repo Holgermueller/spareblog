@@ -12,9 +12,12 @@
               {{ blog.createdAt | formatDate }}
             </h5>
           </v-card-title>
+          <v-card-subtitle>
+            <hr class="my-3" />
+          </v-card-subtitle>
           <v-card-text> description here </v-card-text>
           <v-card-actions>
-            <nuxt-link :to="{ name: 'blog-slug', params: { slug: blog.slug } }">
+            <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">
               <v-chip outlined>
                 Keep reading
                 <v-icon right>mdi-arrow-right</v-icon>

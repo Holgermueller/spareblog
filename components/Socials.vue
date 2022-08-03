@@ -54,6 +54,7 @@ export default {
   background-color: #f7f9fb;
 }
 .social-link:hover {
-  color: #31708e;
+  background-color: #31708e;
+  color: #f7f9fb;
 }
 </style>

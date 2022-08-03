@@ -14,7 +14,9 @@
                   {{ blog.createdAt | formatDate }}
                 </h6>
               </v-card-title>
-              <v-divider class="divider"></v-divider>
+              <v-card-subtitle>
+                <hr class="my-3" />
+              </v-card-subtitle>
               <v-card-text>
                 <article>
                   <nuxt-content :document="blog" />
@@ -22,9 +24,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <nuxt-link
-                  :to="{ name: 'blog-slug', params: { slug: blog.slug } }"
-                >
+                <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">
                   <v-chip outlined>
                     Keep reading <v-icon right>mdi-arrow-right</v-icon>
                   </v-chip>
@@ -58,10 +58,6 @@ export default {
 </script>
 
 <style scoped>
-.divider {
-  width: 95%;
-  margin: auto;
-}
 a {
   text-decoration: none;
 }

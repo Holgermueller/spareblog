@@ -23,8 +23,8 @@
         </v-card-subtitle>
 
         <v-card-text>
-          <article>
-            <nuxt-content class="main-content" :document="blogs[0]" />
+          <article class="main-content">
+            <nuxt-content :document="blogs[0]" />
           </article>
         </v-card-text>
       </v-card>
@@ -83,6 +83,8 @@ export default {
   margin: auto;
 }
 .main-content {
-  font-size: 16px;
+  font-size: 18px !important;
+  text-align: justify;
+  line-height: 1.5;
 }
 </style>

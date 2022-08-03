@@ -6,7 +6,9 @@
       </v-card-title>
       <v-card-subtitle>
         <h4>Writer | Web Developer | Traveler | Enthusiast</h4>
+        <hr class="my-3" />
       </v-card-subtitle>
+
       <v-card-text>
         <p class="about-paragraph">
           Hi, I'm Holger Mueller. I'm a recent transplant to the town of
@@ -24,12 +26,12 @@
           virtue of that, we live where she's able to get work. Why don't I get
           a job somewhere else so we can live there? There're a few reasons for
           that. First, my whole life, I've focused on getting the kind of job
-          that allows me to work anywhere. Did I have Arkansas in mind when I
-          decided that? No. And yes, I did have a job before we moved here,
-          which I quit when we moved here. But it was a retail job, so not the
-          kind of job around which you should base your major decisions in life.
-          Also, this job, the one my wife took, is the kind of job toward which
-          she had been working for her entire life, her dream job. Is the
+          that allows me to work anywhere I wanted. Did I have Arkansas in mind
+          when I decided that? No. And yes, I did have a job before we moved
+          here, which I quit when we moved here. But it was a retail job, so not
+          the kind of job around which you should base your major decisions in
+          life. Also, this job, the one my wife took, is the kind of job toward
+          which she had been working for her entire life, her dream job. Is the
           location something she'd been working toward? No, the location is a
           tad far from the dream. But again, in academia, you take the job you
           can get, and you make the most of it.
@@ -99,6 +101,8 @@ export default {
 .about-paragraph {
   width: 75%;
   margin: 16px auto 0;
-  font-size: 16px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
 }
 </style>

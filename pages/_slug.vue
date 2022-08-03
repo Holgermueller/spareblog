@@ -8,7 +8,9 @@
       </v-card-title>
 
       <v-card-text>
-        <nuxt-content :document="blog"></nuxt-content>
+        <article class="blog-content">
+          <nuxt-content :document="blog"></nuxt-content>
+        </article>
       </v-card-text>
     </v-card>
   </div>
@@ -28,5 +30,10 @@ export default {
 .article-card {
   width: 85%;
   margin: auto;
+}
+.blog-content {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.5;
 }
 </style>
