@@ -83,7 +83,7 @@ export default {
   margin: auto;
 }
 .main-content {
-  font-size: 18px !important;
+  font-size: 18px;
   text-align: justify;
   line-height: 1.5;
 }

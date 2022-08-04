@@ -6,13 +6,13 @@
           <v-hover v-slot:default="{ hover }">
             <v-card :elevation="hover ? 12 : 0" class="recent-post">
               <v-card-title>
-                <h6>
+                <h3>
                   {{ blog.title }}
-                </h6>
+                </h3>
                 <v-spacer></v-spacer>
-                <h6>
+                <h3>
                   {{ blog.createdAt | formatDate }}
-                </h6>
+                </h3>
               </v-card-title>
               <v-card-subtitle>
                 <hr class="my-3" />

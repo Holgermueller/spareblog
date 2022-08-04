@@ -3,17 +3,21 @@
     <v-main class="app">
       <v-container>
         <v-app-bar elevation="0" color="#31708e" app dark>
-          <v-btn to="/" elevation="0" text dark>
-            <h1>Holger Mueller</h1>
-          </v-btn>
+          <nuxt-link to="/">
+            <h1>
+              <i>Holger Mueller</i>
+            </h1>
+          </nuxt-link>
 
           <v-spacer></v-spacer>
-          <div v-for="(button, i) in navArray" :key="i">
-            <v-btn :to="button.buttonLink" elevation="0" text block>
-              <span class="mr-2">
-                {{ button.buttonName }}
-              </span>
-            </v-btn>
+          <div v-for="(link, i) in navArray" :key="i">
+            <nuxt-link :to="link.path">
+              <h3>
+                <span class="mr-6">
+                  {{ link.linkName }}
+                </span>
+              </h3>
+            </nuxt-link>
           </div>
         </v-app-bar>
         <Nuxt />
@@ -34,9 +38,9 @@ export default {
   name: 'default',
   data: () => ({
     navArray: [
-      { buttonName: 'About', buttonLink: '/about' },
-      { buttonName: 'Archives', buttonLink: '/archives' },
-      { buttonName: 'Contact', buttonLink: '/contact' },
+      { linkName: 'About', path: '/about' },
+      { linkName: 'Archives', path: '/archives' },
+      { linkName: 'Contact', path: '/contact' },
     ],
   }),
 }
@@ -51,6 +55,6 @@ export default {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: white !important;
 }
 </style>
