@@ -18,12 +18,9 @@
                 <hr class="my-3" />
               </v-card-subtitle>
               <v-card-text>
-                <article>
-                  <nuxt-content :document="blog" />
-                </article>
+                <section>Description:</section>
               </v-card-text>
               <v-card-actions>
-                <v-spacer></v-spacer>
                 <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">
                   <v-chip outlined>
                     Keep reading <v-icon right>mdi-arrow-right</v-icon>

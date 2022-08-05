@@ -8,6 +8,7 @@
       </v-card-title>
 
       <v-card-text>
+        <hr class="my-3" />
         <article class="blog-content">
           <nuxt-content :document="blog"></nuxt-content>
         </article>
