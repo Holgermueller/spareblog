@@ -29,6 +29,12 @@
         >&copy; {{ new Date().getFullYear() }} Holger Mueller &middot; Built
         with <a href="https://nuxtjs.org/">Nuxtjs</a>
       </span>
+      <v-spacer></v-spacer>
+      <span>
+        <a href="https://github.com/Holgermueller/blog" target="_blank">
+          <v-icon>mdi-github</v-icon>
+        </a>
+      </span>
     </v-footer>
   </v-app>
 </template>

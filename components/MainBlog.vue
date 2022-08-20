@@ -1,13 +1,15 @@
 <template>
-  <div class="post">
-    <v-card class="article-card" elevation="0">
-      <v-card-title>
+  <div id="mainBlog">
+    <v-card class="newest-blog" elevation="0">
+      <v-card-title class="headline">
         <h1>
-          {{ blog.title }}
+          {{ blogs[0].title }}
         </h1>
+
         <v-spacer></v-spacer>
+
         <h1>
-          {{ blog.createdAt | formatDate }}
+          {{ blogs[0].createdAt | formatDate }}
         </h1>
       </v-card-title>
 
@@ -20,8 +22,8 @@
       </v-card-subtitle>
 
       <v-card-text>
-        <article class="blog-content">
-          <nuxt-content :document="blog"></nuxt-content>
+        <article class="main-content">
+          <nuxt-content :document="blogs[0]" />
         </article>
       </v-card-text>
     </v-card>
@@ -30,9 +32,19 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const blog = await $content('blogs', params.slug).fetch()
-    return { blog }
+  name: 'MainBlog',
+
+  props: {
+    blogs: {
+      type: Array,
+    },
+  },
+
+  methods: {
+    determineTimeToRead(data) {
+      const WordsPerMinute = 200
+      let result = {}
+    },
   },
 
   filters: {
@@ -45,11 +57,7 @@ export default {
 </script>
 
 <style scoped>
-.article-card {
-  width: 85%;
-  margin: auto;
-}
-.blog-content {
+.main-content {
   font-size: 18px;
   text-align: justify;
   line-height: 1.5;
