@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/flyover", {data:[{blog:{slug:"flyover",title:"Fly Over",toc:[],body:{type:"root",children:[{type:"element",tag:"p",props:{},children:[{type:"text",value:"Fly over"}]}]},dir:"\u002Fblogs",path:"\u002Fblogs\u002Fflyover",extension:".md",createdAt:"2022-08-20T04:12:46.823Z",updatedAt:"2022-08-20T04:12:46.824Z"}}],fetch:{},mutations:void 0});
