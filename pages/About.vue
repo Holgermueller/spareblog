@@ -1,10 +1,11 @@
 <template>
   <div id="about-me">
-    <v-card class="about-card" elevation="0">
+    <v-card class="about-card" tile>
       <v-card-title>
         <h2>About Me</h2>
       </v-card-title>
       <v-card-subtitle>
+        <br />
         <h4>Writer | Web Developer | Traveler | Enthusiast</h4>
         <hr class="my-3" />
       </v-card-subtitle>

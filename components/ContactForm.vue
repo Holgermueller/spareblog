@@ -65,11 +65,11 @@ export default {
 <style scoped>
 .form-card {
   width: 85%;
-  margin: 1rem auto;
+  margin: 3% auto;
   background-color: #f7f9fb;
 }
 .form-container {
-  margin-top: 4rem;
+  margin-top: 4%;
 }
 .button {
   margin-bottom: 10px;

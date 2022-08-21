@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .connections-display {
-  width: 75%;
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   background-color: #f7f9fb;

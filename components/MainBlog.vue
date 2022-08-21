@@ -1,6 +1,6 @@
 <template>
   <div id="mainBlog">
-    <v-card class="newest-blog" elevation="0">
+    <v-card class="newest-blog" tile>
       <v-card-title class="headline">
         <h1>
           {{ blogs[0].title }}

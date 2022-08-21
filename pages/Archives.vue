@@ -2,7 +2,7 @@
   <div>
     <div v-for="(blog, index) in blogs" :key="index">
       <v-hover v-slot:default="{ hover }">
-        <v-card class="archive-card" :elevation="hover ? 12 : 0">
+        <v-card class="archive-card" :elevation="hover ? 12 : 0" tile>
           <v-card-title class="card-title">
             <h5>
               {{ blog.title }}

@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+    <div class="parallax"></div>
     <section id="newestPost" class="newest-blog">
       <MainBlog :blogs="blogs" />
     </section>
@@ -35,6 +36,14 @@ export default {
 </script>
 
 <style scoped>
+.parallax {
+  background-color: blue;
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .newest-blog,
 .other-recent-posts {
   width: 85%;

@@ -4,7 +4,7 @@
       <v-row>
         <v-col v-for="(blog, index) in blogs.slice(1, 4)" :key="index">
           <v-hover v-slot:default="{ hover }">
-            <v-card :elevation="hover ? 12 : 0" class="recent-post">
+            <v-card :elevation="hover ? 20 : 2" class="recent-post" tile>
               <v-card-title>
                 <h3>
                   {{ blog.title }}
