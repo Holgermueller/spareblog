@@ -97,7 +97,7 @@ export default {
 <style scoped>
 .about-card {
   width: 85%;
-  margin: auto;
+  margin: 5% auto;
 }
 .about-paragraph {
   width: 75%;
