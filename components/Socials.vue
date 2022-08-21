@@ -15,7 +15,7 @@
                 text
                 block
               >
-                <v-icon> {{ connection.connection_class }}</v-icon>
+                <v-icon> {{ connection.connectionClass }}</v-icon>
                 <span class="connection-name">{{ connection.name }}</span>
               </v-btn>
             </v-col>
@@ -33,12 +33,12 @@ export default {
     connections: [
       {
         name: 'Github',
-        connection_class: 'mdi mdi-github',
+        connectionClass: 'mdi mdi-github',
         link: 'https://github.com/Holgermueller',
       },
       {
         name: 'LinkedIn',
-        connection_class: 'mdi mdi-linkedin',
+        connectionClass: 'mdi mdi-linkedin',
         link: 'https://www.linkedin.com/in/holger-mueller-75855114a/',
       },
     ],
@@ -49,6 +49,7 @@ export default {
 <style scoped>
 .connections-display {
   width: 85%;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   background-color: #f7f9fb;

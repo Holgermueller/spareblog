@@ -47,7 +47,7 @@ export default {
 <style scoped>
 .article-card {
   width: 85%;
-  margin: auto;
+  margin: 5% auto;
 }
 .blog-content {
   font-size: 18px;

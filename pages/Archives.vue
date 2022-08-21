@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="(blog, index) in blogs" :key="index">
+  <div id="previousCard">
+    <div class="previous-container" v-for="(blog, index) in blogs" :key="index">
       <v-hover v-slot:default="{ hover }">
         <v-card class="archive-card" :elevation="hover ? 12 : 0" tile>
           <v-card-title class="card-title">
@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+#previousCard {
+  margin: 5%auto;
+}
 .archive-card {
   width: 85%;
   margin: 5px auto;

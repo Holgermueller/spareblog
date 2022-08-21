@@ -57,6 +57,9 @@ export default {
 </script>
 
 <style scoped>
+.newest-blog {
+  margin: 5% auto;
+}
 .main-content {
   font-size: 18px;
   text-align: justify;
