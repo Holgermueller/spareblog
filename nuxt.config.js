@@ -10,7 +10,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: 'Holger Mueller - %s',
-    title: 'blog',
+    title: 'Blog',
     htmlAttrs: {
       lang: 'en',
     },

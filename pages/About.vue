@@ -1,9 +1,13 @@
 <template>
   <div id="about-me">
     <v-card class="about-card" tile>
-      <v-card-title>
-        <h2>About Me</h2>
-      </v-card-title>
+      <v-img class="align-end" height="400px" src="../images/notebook.png">
+        <!-- Image by Jess Bailey Designs via pexels.com -->
+        <v-card-title>
+          <h2>About Me</h2>
+        </v-card-title>
+      </v-img>
+
       <v-card-subtitle>
         <br />
         <h4>Writer | Web Developer | Traveler | Enthusiast</h4>

@@ -11,14 +11,18 @@
                 </h3>
                 <v-spacer></v-spacer>
                 <h3>
-                  {{ blog.createdAt | formatDate }}
+                  {{ blog.date | formatDate }}
                 </h3>
               </v-card-title>
               <v-card-subtitle>
                 <hr class="my-3" />
               </v-card-subtitle>
               <v-card-text>
-                <section>Description:</section>
+                <section>
+                  <h4>
+                    {{ blog.description }}
+                  </h4>
+                </section>
               </v-card-text>
               <v-card-actions>
                 <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">

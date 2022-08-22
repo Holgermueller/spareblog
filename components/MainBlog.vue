@@ -1,23 +1,25 @@
 <template>
   <div id="mainBlog">
     <v-card class="newest-blog" tile>
-      <v-card-title class="headline">
-        <h1>
-          {{ blogs[0].title }}
-        </h1>
+      <v-img class="align-end" height="400px" width="100%" :src="blogs[0].img">
+        <v-card-title class="headline">
+          <h1>
+            {{ blogs[0].title }}
+          </h1>
 
-        <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
 
-        <h1>
-          {{ blogs[0].createdAt | formatDate }}
-        </h1>
-      </v-card-title>
+          <h1>
+            {{ blogs[0].date | formatDate }}
+          </h1>
+        </v-card-title>
+      </v-img>
 
       <v-card-subtitle>
         <br />
-        <h4>Location</h4>
+        <h4>Location: {{ blogs[0].location }}</h4>
 
-        <h4>Listening to</h4>
+        <h4>Listening to: {{ blogs[0].listeningTo }}</h4>
         <hr class="my-3" />
       </v-card-subtitle>
 

@@ -1,21 +1,23 @@
 <template>
   <div class="post">
     <v-card class="article-card" elevation="0">
-      <v-card-title>
-        <h1>
-          {{ blog.title }}
-        </h1>
-        <v-spacer></v-spacer>
-        <h1>
-          {{ blog.createdAt | formatDate }}
-        </h1>
-      </v-card-title>
+      <v-img class="align-end" height="400px" width="100%" :src="blog.img">
+        <v-card-title>
+          <h1>
+            {{ blog.title }}
+          </h1>
+          <v-spacer></v-spacer>
+          <h1>
+            {{ blog.date | formatDate }}
+          </h1>
+        </v-card-title></v-img
+      >
 
       <v-card-subtitle>
         <br />
-        <h4>Location</h4>
+        <h4>Location: {{ blog.location }}</h4>
 
-        <h4>Listening to</h4>
+        <h4>Listening to: {{ blog.listeningTo }}</h4>
         <hr class="my-3" />
       </v-card-subtitle>
 

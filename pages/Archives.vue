@@ -9,13 +9,19 @@
             </h5>
             <v-spacer></v-spacer>
             <h5>
-              {{ blog.createdAt | formatDate }}
+              {{ blog.date | formatDate }}
             </h5>
           </v-card-title>
           <v-card-subtitle>
             <hr class="my-3" />
           </v-card-subtitle>
-          <v-card-text> description here </v-card-text>
+          <v-card-text>
+            <section>
+              <h4>
+                {{ blog.description }}
+              </h4>
+            </section>
+          </v-card-text>
           <v-card-actions>
             <nuxt-link :to="{ name: 'slug', params: { slug: blog.slug } }">
               <v-chip outlined>
