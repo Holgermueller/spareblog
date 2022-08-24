@@ -1,5 +1,7 @@
 <template>
-  <div id="previousCard">
+  <div id="previousPage">
+    <ArchivesHeader />
+
     <div class="previous-container" v-for="(blog, index) in blogs" :key="index">
       <v-hover v-slot:default="{ hover }">
         <v-card class="archive-card" :elevation="hover ? 12 : 0" tile>
@@ -37,6 +39,8 @@
 </template>
 
 <script>
+import ArchivesHeader from '../components/ArchivesHeader.vue'
+
 export default {
   name: 'Archives',
 
@@ -44,6 +48,10 @@ export default {
     return {
       title: 'Archives',
     }
+  },
+
+  components: {
+    ArchivesHeader,
   },
 
   async asyncData({ $content, params }) {

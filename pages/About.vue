@@ -4,15 +4,15 @@
       <v-img class="align-end" height="400px" src="../images/notebook.png">
         <!-- Image by Jess Bailey Designs via pexels.com -->
         <v-card-title>
-          <h2>About Me</h2>
+          <h1 class="display-4">About Me</h1>
         </v-card-title>
-      </v-img>
-
-      <v-card-subtitle>
-        <br />
-        <h4>Writer | Web Developer | Traveler | Enthusiast</h4>
         <hr class="my-3" />
-      </v-card-subtitle>
+        <v-card-subtitle>
+          <h4 class="subtitle-1">
+            Writer | Web Developer | Traveler | Enthusiast
+          </h4>
+        </v-card-subtitle>
+      </v-img>
 
       <v-card-text>
         <p class="about-paragraph">
